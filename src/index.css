@@ -1,2 +1,10 @@
 @import "tailwindcss";
 
+.button {
+    background-color: whitesmoke;
+    transition: 100ms;
+}
+.button:hover {
+    background-color: rgb(171, 165, 165);
+    
+}
