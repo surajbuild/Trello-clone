@@ -45,12 +45,12 @@ const Card = ({ id, title, description, index, moveCardListItem }) => {
     return (
         <div 
             ref={ref} 
-            className="border rounded p-5 m-5 cursor-pointer bg-white shadow-sm"
+            className="bg-white border border-gray-200 rounded-xl p-5 m-5 shadow-sm hover:shadow-md transition-all duration-200 cursor-grab active:cursor-grabbing"
             style={{ opacity: isDragging ? 0.3 : 1 }} 
         >
-            <h3 className="font-bold">{title}</h3>
-            <div className="h-[2px] w-full bg-gray-200 my-2"></div>
-            <div className="text-sm text-gray-600">
+            <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+            <div className="h-px w-full bg-gray-200 my-3"></div>
+            <div className="text-sm text-gray-600 leading-relaxed">
                 {description}
             </div>
         </div>
